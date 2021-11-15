@@ -23,7 +23,7 @@ const Nav = (props) => {
             Profile
           </Link>
         </Menu.Item>
-        <Menu.Item key = 'protected'>
+        <Menu.Item key="protected">
           <Link to={"/protected"}>
             <FileProtectedOutlined />
             Protected
