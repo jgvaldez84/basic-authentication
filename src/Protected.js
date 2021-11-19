@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import Auth from "@aws-amplify";
-import { Container } from "./Container";
+import Container from "./Container";
 
 const Protected = (props) => {
   useEffect(() => {
