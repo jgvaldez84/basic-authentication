@@ -1,4 +1,3 @@
-import react from "react";
 import Container from "./Container";
 
 const Contact =()=> {

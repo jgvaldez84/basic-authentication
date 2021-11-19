@@ -5,6 +5,7 @@ import Nav from "./Nav";
 import Public from "./Public";
 import Profile from "./Profile";
 import Protected from "./Protected";
+import Contact from "./Contact";
 
 const Router = () => {
   const [current, SetCurrent] = useState("home");
@@ -28,6 +29,7 @@ const Router = () => {
         <Route exact path="/" element={<Public />} />
         <Route exact path="/protected" element={<Protected />} />
         <Route exact path="/profile" element={<Profile />} />
+        <Route exact path ='/contact' element={<Contact />} />
         <Route element={<Public />} />
       </Routes>
     </HashRouter>
