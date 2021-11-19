@@ -11,7 +11,7 @@ const Protected = (props) => {
         }, [])
     return (
         <Container>
-                <h1>Protected Route</h1>
+                <h1>if you made it here, that means you signed in!</h1>
         </Container>
     );
 }
