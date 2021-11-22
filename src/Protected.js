@@ -1,12 +1,13 @@
 import React, { useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 import { Auth } from "aws-amplify";
 import Container from "./Container";
 
-const Protected = (props) => {
+const Protected = () => {
+  const navigate = useNavigate();
   useEffect(() => {
-    console.log(props);
     Auth.currentAuthenticatedUser().catch(() => {
-      this.props.history.push("/profile")
+      navigate("/profile");
     });
   }, []);
   return (
