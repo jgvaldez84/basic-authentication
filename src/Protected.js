@@ -4,8 +4,9 @@ import Container from "./Container";
 
 const Protected = (props) => {
   useEffect(() => {
+    console.log(props);
     Auth.currentAuthenticatedUser().catch(() => {
-      this.props.history.push("/profile");
+      this.props.history.push("/profile")
     });
   }, []);
   return (
