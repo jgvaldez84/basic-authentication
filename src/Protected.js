@@ -9,6 +9,7 @@ const Protected = () => {
     Auth.currentAuthenticatedUser().catch(() => {
       navigate("/profile");
     });
+    // eslint-disable-next-line
   }, []);
   return (
     <Container>
